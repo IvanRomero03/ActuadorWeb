@@ -1,1 +1,1 @@
-web: gunicorn wsig:app
+web: gunicorn eflask/wsig:app
