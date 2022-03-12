@@ -1,11 +1,11 @@
 from flask import Flask
-from ConectorDB import BaseDeDatos
+from eflask.app.ConectorDB import BaseDeDatos
 
 app = Flask(__name__)
 
 
 @app.route('/')
-def index():
+def home_view():
     DB = BaseDeDatos()
     DB.insertarRegistro(1)
     print(DB.selectRegistrosUsuario(1))
