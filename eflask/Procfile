@@ -1,0 +1,1 @@
+web: gunicorn wsig:app
