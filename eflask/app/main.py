@@ -8,5 +8,4 @@ app = Flask(__name__)
 def home_view():
     DB = BaseDeDatos()
     DB.insertarRegistro(1)
-    print(DB.selectRegistrosUsuario(1))
     return '<h1>Hola mundo</h1>'
