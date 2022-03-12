@@ -9,5 +9,3 @@ def home_view():
     DB = BaseDeDatos()
     DB.insertarRegistro(1)
     return '<h1>Hola mundo</h1>'
-
-app.run()
