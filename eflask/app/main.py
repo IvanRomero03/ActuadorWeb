@@ -9,4 +9,4 @@ def home_view():
     DB = BaseDeDatos()
     DB.insertarRegistro(1)
     print(DB.selectRegistrosUsuario(1))
-    return str(DB.selectRegistrosUsuario(1)[-1][1]) + 'a'
+    return '<h1>Hola mundo</h1>'
