@@ -8,4 +8,4 @@ app = Flask(__name__)
 def home_view():
     DB = BaseDeDatos()
     DB.insertarRegistro(1)
-    return str(DB.selectRegistrosUsuario(1)[-1])
+    return str(DB.selectRegistroUsuarioFecha(1, datetime.now(), datetime.now() - timedelta(days=1)))
